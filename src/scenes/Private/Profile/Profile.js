@@ -15,6 +15,7 @@ import RepositoriesOverview from "../../../components/RepositoriesOverview/Repos
 import SearchUsers from "../../../components/SearchUsers/SearchUsers";
 import logoPng from "../../../assets/images/logo.png";
 import CardRepo from "../../../components/Cards/CardRepo/CardRepo";
+import SearchRepo from "../../../components/SearchRepo/SearchRepo";
 
 const { TabPane } = Tabs;
 
@@ -71,9 +72,20 @@ const Profile = () => {
                   key="2"
                 >
                   <div className="respos">
-                    {user.success.repos?.map((item) => (
-                      <CardRepo repo={item} key={item.id} />
-                    ))}
+                    <h1 className="title">Search for a specific repository</h1>
+                    <SearchRepo />
+                    {user?.success?.userRepo ? (
+                      <CardRepo repo={user?.success?.userRepo} />
+                    ) : (
+                      <>
+                        <h1 className="title">
+                          Repository list. Amount: {user?.success?.repos?.length}
+                        </h1>
+                        {user.success.repos?.map((item) => (
+                          <CardRepo repo={item} key={item.id} />
+                        ))}
+                      </>
+                    )}
                   </div>
                 </TabPane>
               </Tabs>

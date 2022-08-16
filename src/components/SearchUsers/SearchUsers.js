@@ -18,6 +18,7 @@ const SearchUsers = () => {
     dispatch(usersActions.getRepos(value));
     if (user.success.user !== undefined) {
       history.push(`/profile/${value}`);
+      dispatch(usersActions.getRepo(""));
     }
   };
 

@@ -10,7 +10,8 @@ const RepositoriesOverview = ({ repos }) => {
         }
       }
     }
-  }, [cantStars, repos, setCantStars]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [repos, setCantStars]);
   return (
     <section className="RepositoriesOverview">
       {cantStars >= 1 ? (

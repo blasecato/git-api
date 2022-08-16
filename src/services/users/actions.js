@@ -7,6 +7,9 @@ const { users: usersActions } = createActions({
 
     GET_REPOS: (user) => ({ user }),
     GET_REPOS_RESPONSE: (users) => users,
+
+    GET_REPO: (userRepo) => ({ userRepo }),
+    GET_REPO_RESPONSE: (userRepos) => userRepos,
   },
 });
 

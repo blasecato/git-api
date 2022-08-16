@@ -4,14 +4,17 @@ export const INITIAL_STATE = {
   loading: {
     user: false,
     repos: false,
+    userRepo: false,
   },
   error: {
     user: undefined,
     repos: undefined,
+    userRepo: undefined,
   },
   success: {
     user: undefined,
     repos: undefined,
+    userRepo: undefined,
   },
 };
 
@@ -62,6 +65,30 @@ const reducer = handleActions(
             error: { ...state.error, repos: message },
             success: { ...state.success, repos: undefined },
             loading: { ...state.loading, repos: false },
+          };
+        },
+      },
+
+      GET_REPO: (state) => ({
+        ...state,
+        loading: { ...state.loading, userRepo: true },
+        error: { ...state.error, userRepo: undefined },
+      }),
+      GET_REPO_RESPONSE: {
+        next(state, { payload: { userRepo } }) {
+          return {
+            ...state,
+            loading: { ...state.loading, userRepo: false },
+            success: { ...state.success, userRepo: userRepo },
+            error: INITIAL_STATE.error,
+          };
+        },
+        throw(state, { payload: { message } }) {
+          return {
+            ...state,
+            error: { ...state.error, userRepo: message },
+            success: { ...state.success, userRepo: undefined },
+            loading: { ...state.loading, userRepo: false },
           };
         },
       },

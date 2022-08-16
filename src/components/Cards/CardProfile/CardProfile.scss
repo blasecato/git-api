@@ -10,6 +10,9 @@
       border-radius: 50%;
       box-shadow: 0 0 0 1px #cdd9e51a;
     }
+    h2, h6, a {
+      text-align: left;
+    }
     .follow {
       display: flex;
       justify-content: flex-start;
@@ -58,6 +61,21 @@
     .h6 {
       font-family: "Roboto";
       color: #768390;
+    }
+  }
+  @media (max-width: $medium) {
+    transform: translate(0px);
+    max-width: 200px;
+    &__container {
+      text-align: center;
+      h2, h6, a {
+        text-align: left;
+      }
+    }
+    .avatar {
+      width: 130px;
+      height: 130px;
+      margin: 0 auto;
     }
   }
 }

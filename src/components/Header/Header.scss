@@ -44,4 +44,19 @@
       }
     }
   }
+  @media (max-width: $medium) {
+    height: auto;
+    padding: 16px;
+    min-height: 75px;
+    .container {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 10px;
+    }
+    &__box, .SearchUsers {
+      width: 100%;
+    }
+  }
 }

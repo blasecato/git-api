@@ -20,7 +20,6 @@ function* getUser({ payload }) {
 function* getRepos({ payload }) {
   const url = "users/";
   const response = yield ApiConnection.get(url+payload.user+"/repos");
-  console.log("response",response)
   if (response.status !== 200)
     return yield put(usersActions.getReposResponse(parseError(response), response));
   return yield put(
@@ -30,10 +29,23 @@ function* getRepos({ payload }) {
   );
 }
 
+function* getRepo({ payload }) {
+  const url = "repos";
+  const response = yield ApiConnection.get(url+"/"+payload?.userRepo);
+  if (response.status !== 200)
+    return yield put(usersActions.getRepoResponse(parseError(response), response));
+  return yield put(
+    usersActions.getRepoResponse({
+      userRepo: response.data,
+    })
+  );
+}
+
 
 function* ActionWatcher() {
   yield takeLatest(usersActions.getUser, getUser);
   yield takeLatest(usersActions.getRepos, getRepos);
+  yield takeLatest(usersActions.getRepo, getRepo);
 }
 
 export default function* rootSaga() {

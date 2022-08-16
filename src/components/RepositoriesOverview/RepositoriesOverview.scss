@@ -3,4 +3,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: $x-large) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    .CardRepo {
+      width: 100%;
+    }
+  }
 }
