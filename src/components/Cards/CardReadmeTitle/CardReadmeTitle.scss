@@ -1,0 +1,114 @@
+.CardReadmeTitle {
+  margin-top: 20px;
+  &-head {
+    background-color: #161b22;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid #30363d;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    .avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+    }
+    .title {
+      font-weight: 900;
+      font-size: 14px;
+      font-family: 'Roboto';
+      color: #c9d1d9;
+      margin-left: 13px;
+    }
+    .see-more {
+      font-family: 'Roboto';
+      color: #c9d1d9;
+      border: none;
+      background: #6e768166;
+      padding: 3px;
+      padding-bottom: 8px;
+      padding-top: 0;
+      height: 10px;
+      margin-left: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .code-commit {
+      font-weight: 600;
+      font-size: 14px;
+      font-family: 'Roboto';
+      color: #8b949e;
+      margin-left: 13px;
+    }
+    .anticon , .history{
+      color: #c9d1d9;
+      font-weight: 900;
+      font-size: 14px;
+      font-family: 'Roboto';
+    }
+    .anticon {
+      margin-left: 15px;
+    }
+    .history {
+      margin-left: 5px;
+    }
+  }
+  &-body {
+    border: 1px solid #30363d;
+    border-top: none;
+    border-bottom: none;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-start;
+    a {
+      height: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 6px;
+    }
+  }
+  &-footer {
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid #30363d;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-weight: 700;
+      font-size: 15px;
+      font-family: 'Roboto';
+      color: #c9d1d9;
+      margin-left: 13px;
+    }
+    .text {
+      font-weight: 400;
+    }
+    .anticon {
+      color: #c9d1d9;
+      margin-top: -2px;
+    }
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: $medium) {
+    &-head {
+      .see-more {
+        display: none;
+      }
+      .code-commit {
+        display: none;
+      }
+    } 
+    &-footer {
+      .box {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+}

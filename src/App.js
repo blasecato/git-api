@@ -1,25 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import Private from "./scenes/Private/Private";
+import { useState } from "react";
+import Public from "./scenes/Public/Public";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [isLogged, setLogged] = useState(true);
+
+  return isLogged ? <Private /> : <Public setLogged={setLogged} />;
 }
 
 export default App;

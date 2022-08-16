@@ -1,0 +1,42 @@
+.ant-input {
+  color: #c9d1d9;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 4px 0 0 4px !important;
+  height: 36px;
+  &:hover,
+  &:active,
+  &:focus {
+    border: 1px solid #30363d;
+    border-right: none;
+    box-shadow: none;
+  }
+}
+.ant-input-search .ant-input:hover,
+.ant-input-search .ant-input:focus {
+  border: 1px solid #30363d;
+}
+.ant-input-group-addon {
+  background-color: transparent;
+  .ant-btn {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 0 4px 4px 0 !important;
+    border-left: none;
+    height: 36px;
+    .anticon {
+      color: #c9d1d9;
+    }
+  }
+}
+.SearchUsers {
+  .spin-icon {
+    font-size: 30px;
+    color: #8256d0;
+  }
+  @media (max-width: $medium) {
+    .ant-input-group-wrapper {
+      width: 100% !important;
+    }
+  }
+}

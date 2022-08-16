@@ -1,0 +1,48 @@
+.Code {
+  .container {
+    padding: 10px 20px;
+  }
+  &__head {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    .label {
+      color: #58a6ff;
+      font-weight: 700;
+      font-size: 18px;
+      margin: 0 10px;
+      font-family: 'Actor', sans-serif;
+      span {
+        color: #c9d1d9;
+        margin: 0 3px;
+      }
+    }
+    .btn {
+      height: 32px;
+      color: #c9d1d9;
+      background-color: #21262d;
+      border-color: #f0f6fc1a;
+      border-radius: 6px;
+      padding: 3px 15px;
+      font-weight: 700;
+      font-size: 14px;
+      font-family: 'Actor', sans-serif;
+      .arrow {
+        font-size: 10px;
+      }
+    }
+    &__box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  @media (max-width: $medium) {
+    &__head {
+      .btn {
+        display: none;
+      }
+    }
+  }
+}

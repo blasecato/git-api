@@ -1,0 +1,124 @@
+.HeadTabs {
+  .empty {
+    padding: 16px 50px;
+  }
+  &__bettwen {
+    padding: 0 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        color: #c9d1d9;
+      }
+      .title {
+        font-size: 25px;
+        font-weight: 700;
+        font-family: 'Roboto';
+        color: #58a6ff;
+        margin: 0 10px;
+        span {
+          color: #c9d1d9;
+          margin: 0 2px;
+        }
+      }
+      .label {
+        border: 1px solid #30363d;
+        padding: 2px 7px;
+        border-radius: 2em;
+        p {
+          font-family: 'Roboto';
+          color: #8b949e;
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+      .btn-head {
+        height: 28px;
+        padding: 3px 12px;
+        line-height: 20px;
+        background-color: #21262d;
+        border-color: #f0f6fc1a;
+        color: #c9d1d9;
+        font-weight: 700;
+        font-size: 13px;
+        font-family: 'Actor', sans-serif;
+        margin: 0 5px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        .number {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 20px;
+          width: 20px;
+          padding: 0px;
+          padding-bottom: 4px;
+          background-color: #30363d;
+          border-radius: 2em;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .ant-tabs > .ant-tabs-nav, .ant-tabs > div > .ant-tabs-nav {
+    padding: 0 37px;
+    margin-top: 16px;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #c9d1d9 !important;
+  }
+  .ant-tabs-tab .ant-tabs-tab-btn {
+    color: #c9d1d9 !important;
+  }
+  .ant-tabs-tab {
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Actor', sans-serif;
+    .anticon {
+      margin-right: 7px !important;
+    }
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .arrows {
+      margin-right: 7px;
+      margin-top: -2px;
+    }
+    .arrow {
+      color: #c9d1d9 !important;
+      margin-right: 0px !important;
+      font-size: 10px;
+    }
+  }
+  .ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before {
+    position: absolute;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid #21262e;
+    content: '';
+  }
+  .ant-tabs-ink-bar {
+    position: absolute;
+    background: #f78166;
+    pointer-events: none;
+  }
+  .ant-tabs-tab.ant-tabs-tab-active {
+    font-weight: 700;
+      
+  }
+  @media (max-width: $medium) {
+    &__bettwen {
+      padding: 0 15px;
+      &__box--two {
+        display: none;
+      } 
+    }
+  }
+}

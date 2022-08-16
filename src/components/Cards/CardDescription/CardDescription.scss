@@ -1,0 +1,55 @@
+.CardDescription {
+  margin-top: 20px;
+  &-head {
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid #30363d;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    .title {
+      font-weight: 900;
+      font-size: 14px;
+      font-family: 'Roboto';
+      color: #c9d1d9;
+      margin-left: 13px;
+    }
+    .anticon {
+      color: #c9d1d9;
+    }
+  }
+  &-body {
+    border: 1px solid #30363d;
+    border-top: none;
+    padding: 50px 30px;
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+    justify-content: flex-start;
+    flex-direction: column;
+    a {
+      height: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 6px;
+    }
+    .title {
+      font-weight: 700;
+      font-size: 25px;
+      text-transform: capitalize;
+      font-family: 'Roboto';
+      color: #c9d1d9;
+    }
+    .text {
+      font-weight: 700;
+      font-size: 15px;
+      font-family: 'Roboto';
+      color: #c9d1d9;
+      margin-bottom: 20px ;
+    }
+  }
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

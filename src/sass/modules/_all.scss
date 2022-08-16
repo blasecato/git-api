@@ -1,0 +1,17 @@
+// import scenes
+@import "../../scenes/Public/Login/Login.scss";
+@import "../../scenes/Private/home/Home.scss";
+@import "../../scenes/Private/Profile/Profile.scss";
+
+// import components
+@import "../../components/Header/Header.scss";
+@import "../../components/Footer/Footer.scss";
+@import "../../components/Layout/Layout.scss";
+@import "../../components/HeadTabs/HeadTabs.scss";
+@import "../../components/Code/Code.scss";
+@import "../../components/Cards/CardReadmeTitle/CardReadmeTitle.scss";
+@import "../../components/Cards/CardDescription/CardDescription.scss";
+@import "../../components/SearchUsers/SearchUsers.scss";
+@import "../../components/Cards/CardProfile/CardProfile.scss";
+@import "../../components/RepositoriesOverview/RepositoriesOverview.scss";
+@import "../../components/Cards/CardRepo/CardRepo.scss";

@@ -1,0 +1,119 @@
+.Profile {
+  background-color: #22272e;
+  padding: 16px;
+  min-height: calc(100vh - 187px);
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+      justify-content: center;
+    }
+    .ant-tabs-top > .ant-tabs-nav::before, .ant-tabs-bottom > .ant-tabs-nav::before, .ant-tabs-top > div > .ant-tabs-nav::before, .ant-tabs-bottom > div > .ant-tabs-nav::before {
+      position: absolute;
+      right: 0;
+      left: 0;
+      border-bottom: 1px solid #373e47;
+      content: '';
+    }
+    .ant-tabs > .ant-tabs-nav, .ant-tabs > div > .ant-tabs-nav {
+      padding: 0 37px;
+    }
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: #c9d1d9 !important;
+      font-weight: 700;
+    }
+    .ant-tabs-tab .ant-tabs-tab-btn {
+      color: #c9d1d9 !important;
+    }
+    .ant-tabs-ink-bar {
+      position: absolute;
+      background: #f78166;
+      pointer-events: none;
+    }
+    .ant-tabs-tab {
+      font-weight: 400;
+      font-size: 14px;
+      font-family: 'Roboto';
+      .title-tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .number {
+        padding: 2px 5px;
+        height: 15px;
+        background: #373e47;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        color: #ADBAC7;
+        font-weight: 700;
+        font-family: "Roboto";
+        margin-left: 5px;
+      }
+    }
+    .ant-tabs.ant-tabs-top {
+      width: 100%;
+      .ant-tabs-tabpane {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      } 
+    }
+    .respos {
+      flex-direction: column;
+      width: 100%;
+      .CardRepo {
+        width: 100%;
+      }
+    }
+  }
+  &-rth {
+    width: 70%;
+    padding: 0 30px;
+    min-height: 500px;
+    &--spin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .anticon {
+        font-size: 60px;
+        color: #8256d0;
+      }
+    }
+    .title {
+      font-size: 16px;
+      color: #ADBAC7;
+      font-family: "Roboto";
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+  }
+  .empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .logoPng {
+      margin-bottom: 30px;
+      max-height: 200px;
+    }
+    .message {
+      margin-bottom: 20px;
+    }
+    .anticon {
+      color: #db5945;
+      font-size: 20px;
+      margin-right: 20px;
+    }
+    span {
+      font-size: 20px;
+      font-family: "Roboto";
+      font-weight: 700;
+      color: #ADBAC7;
+    }
+  }
+}

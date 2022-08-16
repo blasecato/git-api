@@ -1,0 +1,63 @@
+$small: 440px;
+$s-medium: 570px;
+$medium: 768px;
+$large: 960px;
+$x-large: 1060px;
+$xx-large: 1250px;
+
+$white: #ffffff;
+$black: #000000;
+$transparent: transparent;
+
+
+// ----------------------------------------------------------------
+//Font base
+$rem-value: 16 !default;
+$unit: rem !default;
+
+$theme-color: rebeccapurple;
+$desisable: #b2b2b2;
+$input-line: #bdbdbd;
+
+$colors-12: linear-gradient(274.08deg, rgba(93, 48, 221, 0.67) -2.97%,#7F14FC 56.11%);
+$colors-litberry: #5d30dd !default;
+$colors-midberry: #340aab !default;
+$colors-frozenberry: #35d8d0 !default;
+$colors-backberry: #f6f6f6 !default;
+$colors-pureberry: #4b3a7c !default;
+$colors-coldberry: #6171ae !default;
+$colors-darkberry: #1c0e42 !default;
+$colors-warningberry: #fffaed;
+$colors-smoothieberry: linear-gradient(0deg, #00dbd0 0%, #7b3bf9 100%);
+$colors-hotberry: linear-gradient(274deg, #5d30ddab 0%, #7f14fc 100%);
+$colors-gradient: linear-gradient(0deg, #5d33e4 0%, #08cdd2 100%);
+$colors-black: #1b1b1b;
+$colors-white: #ffffff;
+$colors-highlight-azul: #4814dc;
+$colors-whatsapp: #25d366;
+$colors-oldberry: #b2b2b2;
+$colors-badberry: #eb5757;
+$colors-gradient-image: linear-gradient(0deg, rgba(74, 58, 124, 0.308), rgba(74, 58, 124, 0.301));
+
+
+:root {
+  --colors-12: #{$colors-12};
+  --colors-litberry: #{$colors-litberry};
+  --colors-midberry: #{$colors-midberry};
+  --colors-frozenberry: #{$colors-frozenberry};
+  --colors-backberry: #{$colors-backberry};
+  --colors-pureberry: #{$colors-pureberry};
+  --colors-coldberry: #{$colors-coldberry};
+  --colors-darkberry: #{$colors-darkberry};
+  --colors-warningberry: #{$colors-warningberry};
+  --colors-smoothieberry: #{$colors-smoothieberry};
+  --colors-hotberry: #{$colors-hotberry};
+  --colors-gradient: #{$colors-gradient};
+  --colors-black: #{$colors-black};
+  --colors-white: #{$colors-white};
+  --colors-highlight-azul: #{$colors-highlight-azul};
+  --colors-whatsapp: #{$colors-whatsapp};
+  --colors-oldberry: #{$colors-oldberry};
+  --colors-badberry: #{$colors-badberry};
+  --colors-gradient-image: #{$colors-gradient-image};
+}

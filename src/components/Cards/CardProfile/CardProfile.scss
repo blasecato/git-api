@@ -1,0 +1,63 @@
+.CardProfile {
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  transform: translate(0px, -50px);
+  &__container {
+    .avatar {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px #cdd9e51a;
+    }
+    .follow {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .anticon {
+        color: #768390;
+        margin-right: 5px;
+        margin-top: 18px;
+      }
+      &--text {
+        color: #768390;
+        font-weight: 700;
+        font-family: "Roboto";
+        margin-right: 7px;
+        span {
+          color: #adbac7;
+          margin-right: 5px;
+        }
+      }
+    }
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 20px;
+      .anticon {
+        margin-right: 5px;
+        color: #768390;
+      }
+      h4, a {
+        color: #adbac7;
+        font-weight: 500;
+        font-size: 15px;
+        overflow-wrap: anywhere;
+        font-family: "Roboto";
+      }
+    }
+    .h2 {
+      color: #adbac7;
+      font-weight: 700;
+      font-family: "Roboto";
+      margin-top: 20px;
+      margin-bottom: 4px;
+    }
+    .h6 {
+      font-family: "Roboto";
+      color: #768390;
+    }
+  }
+}

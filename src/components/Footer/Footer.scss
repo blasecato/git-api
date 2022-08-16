@@ -1,0 +1,57 @@
+.Footer {
+  height: 115px;
+  padding: 0 16px;
+  width: 100%;
+  background-color: #0d1117;
+  .icon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    border-top:1px solid #21262d;
+    p {
+      font-weight: 700;
+      font-size: 14px;
+      font-family: 'Actor', sans-serif;
+      color: #c9d1d9;
+      padding: 5px 10px;
+    }
+    .links {
+      margin-left: 50px;
+      a {
+        font-weight: 700;
+        font-size: 14px;
+        font-family: 'Actor', sans-serif;
+        color: #58a6ff;
+        padding: 5px 10px;
+        margin: 0 5px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .logo {
+    margin-right: 10px;
+    width: 31px;
+  }
+  @media (max-width: $medium) {
+    .container {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .icon {
+        margin-top: 20px;
+      }
+      .links {
+        margin-left: -13px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

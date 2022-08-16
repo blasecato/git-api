@@ -1,0 +1,228 @@
+.Login {
+  background: #0d1117;
+  &__container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 80px;
+      .item {
+        text-decoration: none;
+        margin: 0 10px;
+        font-family: 'Actor', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: #58a6ff;
+        &-white {
+          color: #8b949e;
+        }
+      }
+    }
+    .register {
+      background: #161b22;
+      border: 1px solid #21262d;
+      border-radius: 6px;
+      padding: 16px;
+      margin-top: 24px;
+      width: 300px;
+      margin: 20px auto;
+      .label-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .label {
+          font-weight: 400;
+          font-size: 14px;
+          font-family: 'Actor', sans-serif;
+          color: #c9d1d9;
+        }
+        .reset-password {
+          font-family: 'Actor', sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 150%;
+          color: #58a6ff;
+          margin: 0;
+          text-decoration: none;
+        }
+      }
+    }
+    .ant-form-item-explain-error {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 15px;
+      color: #EB5757;
+      margin-top: 5px;
+    }
+    .box {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    
+      &--right {
+        width: 100%;
+      }
+      
+      &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 20px 0px 0px 20px;
+        .logo {
+          width: 48px;
+          height: 48px;
+          margin: 0 auto;
+        }
+        &__form {
+          width: 100%;
+          max-width: 300px;
+          text-align: center;
+          .h2 {
+            color: var(--colors-white);
+            text-align: center;
+            margin-top: 40px;
+          }
+          .button {
+            width: 100%;
+            max-width: 100%;
+            margin-top: 5px;
+          }
+          .form {
+            background: #161b22;
+            border: 1px solid #21262d;
+            border-radius: 6px;
+            padding: 16px;
+            margin-top: 24px;
+            width: 300px;
+            .content-items {
+              margin-top: 0px;
+              margin-bottom: 13px;
+              .label-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+                .label {
+                  font-weight: 400;
+                  font-size: 14px;
+                  font-family: 'Actor', sans-serif;
+                  color: #c9d1d9;
+                }
+              }
+              .form-item {
+                background: #0d1117;
+                border: 1px solid #30363d;
+                border-radius: 5px;
+                height: 32px;
+                width: 100%;
+                margin-bottom: 15px;
+                
+                position: relative;
+                margin-top: 7px;
+                
+                .anticon svg {
+                  display: inline-block;
+                  position: absolute;
+                  right: 15px;
+                  top: 7px;
+                  color: #BDBDBD;
+                }
+                .icon {
+                  margin-top: -3px;
+                  margin-right: 10px;
+                  position: absolute;
+                  left: 15px;
+                  top: 19px;
+                }
+                input {
+                  width: 100%;
+                  padding: 0px 15px;
+                  border-radius: 6px;
+                  padding-left: 18px;
+                  border: none;
+                  height: 32px;
+                  color: #FFFFFF;
+                  background-color: transparent;
+                  font-size: 13px;
+                  &::placeholder {
+                    font-family: 'Actor', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                  }
+                }
+              }
+              .ant-row.ant-form-item.ant-form-item-with-help.form-item.ant-form-item-has-error, .ant-form-item-has-error {
+                margin-bottom: 25px;
+                .ant-form-item-explain-error {
+                  font-family: 'Lato';
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 10px;
+                  line-height: 15px;
+                  color: #EB5757;
+                  margin-top: 5px;
+                }
+                input {
+                  &::placeholder {
+                    color: #EB5757;
+                  }
+                }
+                .ant-form-item-control-input {
+                  border: 1px solid #EB5757;
+                  box-shadow: 0px 0px 4px 1px #EB5757;
+                  border-radius: 5px;
+                }
+              }
+            }
+            .reset-password {
+              font-family: 'Actor', sans-serif;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 150%;
+              color: #58a6ff;
+              margin: 0;
+              text-decoration: none;
+            }
+            .button {
+              font-family: 'Actor', sans-serif;
+              height: 32px;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 20px;
+              white-space: nowrap;
+              &-primary {
+                background: #238636 !important;
+              }
+            }
+          }
+        }
+      }
+      .button {
+        width: 190px;
+      }
+      .sub-title {
+        margin-top: 15px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
