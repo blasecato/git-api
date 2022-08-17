@@ -7,6 +7,7 @@ import {
   TwitterOutlined,
 } from "@ant-design/icons";
 
+// The CardPrile is the card that shows us the personal information of the user
 const CardProfile = ({ user }) => {
   return (
     <section className="CardProfile">

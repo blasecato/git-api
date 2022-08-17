@@ -6,6 +6,7 @@ import * as Token from "../storage/Token";
 import { octokit } from '../config/octokit';
 
 class Api {
+  // post method
   async post(url, data, formData) {
     const dataBody = formData ? this.setStructureFormdata(data) : JSON.stringify(data);
 
@@ -40,6 +41,7 @@ class Api {
       .catch((err) => err);
   }
 
+  // get validate method
   // eslint-disable-next-line class-methods-use-this
   async getValidate(_url, token) {
     const url = new URL(`${API_URL}${_url}`);
@@ -50,7 +52,6 @@ class Api {
       },
     })
       .then(async (res) => {
-        console.log("red",res)
         const payload = await res.json();
 
         if (res.status === 401) {
@@ -61,7 +62,7 @@ class Api {
       })
       .catch((err) => err);
   }
-
+  // get method
   // eslint-disable-next-line class-methods-use-this
   async get(url, params) {
     const completeUrl = new URL(`${API_URL}${url}`);
@@ -86,7 +87,7 @@ class Api {
       })
       .catch((err) => err);
   }
-
+  // put method
   async put(url, data, formData) {
     const dataBody = formData ? this.setStructureFormdata(data) : JSON.stringify(data);
 

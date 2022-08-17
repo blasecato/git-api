@@ -12,8 +12,8 @@ const SearchUsers = () => {
   const history = useHistory();
   const user = useSelector((state) => state.user);
 
+  // function that allows us to search for a . users by username
   const onSearch = (value) => {
-    console.log(value);
     dispatch(usersActions.getUser(value));
     dispatch(usersActions.getRepos(value));
     if (user.success.user !== undefined) {
@@ -22,6 +22,7 @@ const SearchUsers = () => {
     }
   };
 
+  // search trigger in case the page is reloaded
   useEffect(() => {
     if (user.success.user !== undefined) {
       history.push(`/profile/${user?.success?.user?.login}`);

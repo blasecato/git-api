@@ -1,6 +1,7 @@
 import React from "react";
 import { StarOutlined, ForkOutlined } from "@ant-design/icons";
 
+// This is the card that shows us the repository information
 const CardRepo = ({ repo }) => {
   return (
     <section className="CardRepo">

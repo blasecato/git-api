@@ -12,6 +12,7 @@ const SearchUsers = () => {
   const { username } = useParams();
   const user = useSelector((state) => state.user);
 
+  // function that allows us to search for a . repos by name
   const onSearch = (value) => {
     const values = username + "/" + value;
     dispatch(usersActions.getRepo(values));

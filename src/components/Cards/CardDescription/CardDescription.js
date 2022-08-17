@@ -2,6 +2,8 @@ import React from "react";
 import { BarsOutlined } from "@ant-design/icons";
 import SearchUsers from "../../SearchUsers/SearchUsers";
 
+// the CardDescription. is a card whose function is to show the description that tells 
+// us what the function or purpose of this project is
 const CardDescription = ({ item }) => {
   return (
     <section className="CardDescription">

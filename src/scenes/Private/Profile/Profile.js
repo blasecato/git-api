@@ -25,7 +25,6 @@ const Profile = () => {
   const { username } = useParams();
 
   useEffect(() => {
-    console.log("username", username);
     dispatch(usersActions.getUser(username));
     dispatch(usersActions.getRepos(username));
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -79,7 +78,8 @@ const Profile = () => {
                     ) : (
                       <>
                         <h1 className="title">
-                          Repository list. Amount: {user?.success?.repos?.length}
+                          Repository list. Amount:{" "}
+                          {user?.success?.repos?.length}
                         </h1>
                         {user.success.repos?.map((item) => (
                           <CardRepo repo={item} key={item.id} />

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import CardRepo from "../Cards/CardRepo/CardRepo";
 const RepositoriesOverview = ({ repos }) => {
   const [cantStars, setCantStars] = useState(0);
+  // number of stars counter
   useEffect(() => {
     if (repos.length >= 1) {
       for (let index = 0; index < repos.length; index++) {

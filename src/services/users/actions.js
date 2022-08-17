@@ -1,5 +1,5 @@
 import { createActions } from "redux-actions";
-
+// action user
 const { users: usersActions } = createActions({
   USERS: {
     GET_USER: (user) => ({ user }),
